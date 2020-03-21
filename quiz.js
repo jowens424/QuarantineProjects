@@ -93,6 +93,9 @@
     var question = $('<p>').append(questions[index].question);
     qElement.append(question);
     
+    var test = $('<h3>testing image</h3>');
+    qElement.append(test);
+
     var radioButtons = createRadios(index);
     qElement.append(radioButtons);
     
