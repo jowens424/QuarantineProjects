@@ -1,29 +1,58 @@
 (function() {
   var questions = [{
-    question: "What is 2*5?",
-    choices: [2, 5, 10, 15, 20],
+    question: "What tree is this",
+    choices: ['Pine', 'Maple', 'Evergreen', 'Oak'],
+    correctAnswer: 1
+  }, {
+    question: "Which tree is shown below",
+    choices: ['Birch', 'Sycamore', 'Cherry', 'Elm'],
     correctAnswer: 2
   }, {
-    question: "What is 3*6?",
-    choices: [3, 6, 9, 12, 18],
-    correctAnswer: 4
+    question: "And this one?",
+    choices: ['Spruce', 'Beech', 'Walnut', 'Wishing'],
+    correctAnswer: 1
   }, {
-    question: "What is 8*9?",
-    choices: [72, 99, 108, 134, 156],
+    question: "What 'P' Tree Is this?",
+    choices: ['Peach', 'Pear', 'Plum', 'Pistachio'],
     correctAnswer: 0
   }, {
-    question: "What is 1*7?",
-    choices: [4, 5, 6, 7, 8],
+    question: "Which Fruit Tree is This?",
+    choices: ['Lemon', 'Apple', 'Coconut', 'Peach'],
     correctAnswer: 3
-  }, {
-    question: "What is 8*8?",
-    choices: [20, 30, 40, 50, 64],
-    correctAnswer: 4
   }];
-  
   var questionCounter = 0; //Tracks question number
   var selections = []; //Array containing user choices
   var quiz = $('#quiz'); //Quiz div object
+  var imgArray = new Array();
+
+imgArray[0] = new Image();
+imgArray[0].src = <"https://cf.ltkcdn.net/garden/images/std/187218-283x377-beech.jpg">;
+
+imgArray[1] = new Image();
+imgArray[1].src = <"https://images.homedepot-static.com/productImages/1f73b519-e712-40e5-87f6-6417a9cefb25/svn/gurney-s-fruit-trees-69393-64_400_compressed.jpg";
+
+imgArray[5] = new Image();
+imgArray[5].src = 'images/img/Splash_image6.jpg';
+
+/*------------------------------------*/
+
+function nextImage(element)
+{
+    var img = document.getElementById(element);
+
+    for(var i = 0; i < imgArray.length;i++)
+    {
+        if(imgArray[i].src == img.src) // << check this
+        {
+            if(i === imgArray.length){
+                document.getElementById(element).src = imgArray[0].src;
+                break;
+            }
+            document.getElementById(element).src = imgArray[i+1].src;
+            break;
+        }
+    }
+}
   
   // Display initial question
   displayNext();
@@ -92,10 +121,6 @@
     
     var question = $('<p>').append(questions[index].question);
     qElement.append(question);
-    
-    var test = $('<h3>testing image</h3>');
-    qElement.append(test);
-
     var radioButtons = createRadios(index);
     qElement.append(radioButtons);
     

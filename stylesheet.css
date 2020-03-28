@@ -69,3 +69,11 @@ ul {
     display:none;
     width: 90px;
 }
+
+#container.maple {
+    height: 250px;
+    width: 250px;
+    border: 25 px solid white;
+    border-radius: 125px;
+    float: right;
+}
