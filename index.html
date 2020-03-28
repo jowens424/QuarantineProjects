@@ -233,7 +233,85 @@
             transform: scale(1.1);
         }
 
+        .title-box
+        {
+            background: orange;
+            color: #fff;
+            width: 180px;
+            padding: 4px 10px;
+            height: 40px;
+            margin-bottom:30px;
+            display: flex;
+        }
+        .title-box h2
+        {
+            font-size: 24px;
+        }
+        .title-box::after
+        {
+            content: '';
+            border-top: 40px solid orange;
+            border-right: 50px solid transparent;
+            position: absolute;
+            display: flex;
+            margin-top: -4px;
+            margin-left: 170px;
+        }
 
+        .product-top img
+        {
+            display: inline-block;
+        }
+
+       .overlay-right
+        {
+           display: block;
+           opacity: 0;
+           position: absolute;
+           top: 10%;
+           margin-left: 0;
+           width: 70px;
+        }
+
+        .overlay-right .fa
+        {
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+            height: 35px;
+            width: 35px;
+            font-size: 20px;
+            padding: 7px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        .overlay-right .btn-secondary
+        {
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .product-top:hover .overlay-right
+        {
+            opacity: 1;
+            margin-left: 5%;
+            transition: 0.5s;
+        }
+        .product-bottom .fa
+        {
+            color: orange;
+            font-size: 10px;
+        }
+        .product-bottom h3
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .product-bottom h5
+        {
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -340,10 +418,106 @@
                 <h2> 5 Cow Farm Boards </h2>
                 <img src="https://static1.squarespace.com/static/5a6e457d12abd97a057772e6/t/5dc42036d013963f1c0c4a0c/1573134392337/logo+copy.png?format=1500w">
             </div>
+            <div class="col-md-4">
+                <h2> Baltimore Greenhouse </h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/H.P._Rawlings_Conservatory_%26_Botanic_Gardens_of_Baltimore.jpg">
+                </div>
+            <div class="col-md-4">
+                <h2> Cymron Cottage </h2>
+                <img src="https://pbs.twimg.com/profile_images/969226748540973056/3WrdSqz6.jpg">
+            </div>
         </div>
     </div>
 </section>
 
+<!--/*--------on-sale---------*/-->
+
+<section class="on-sale-items">
+<div class="container">
+    <div class="title-box">
+        <h1> On Sale </h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="product-top">
+                <img src="https://waxingkara.com/wp-content/uploads/2014/09/honey-single-wildflower-web.jpg">
+                <div class="overlay-right">
+                    <button type="button" class="btn btn-secondary" title="Quick Shop">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                        <i class="fa fa-heart-o"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary" title="Add to Cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product-bottom text-center">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <h3> Waxing Kara </h3>
+                <h5> $20.00 </h5>
+            </div>
+            <div class="col-md-3">
+                <div class="product-top">
+                    <img src="https://www.naturehills.com/media/catalog/product/cache/35c1080e597d6a74b42d0d88ced836c1/n/a/nantucket-blue-hydrangea-bush-600x600.jpg">
+                    <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                            <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h3> Hydrangea Bush </h3>
+                    <h5> $25.00 </h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-top">
+                    <img src="https://lh3.googleusercontent.com/proxy/o-0v_lDB96bhgcB_raF4rtihYtgxtPgICwFRxy2tSAhYkE1RbCbeiOZIDZlgd_pg05UUpV6hO-mM9aPYXN6GMAUkgrlwOCoRfhg2Zki-aX2WV53GYSw6Y8-qnZSR">
+
+                    <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist">
+                            <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                    <h3> Flash Crab Cake Co. </h3>
+                    <h5> $12.00 </h5>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
 <script>
     function openmenu() {
