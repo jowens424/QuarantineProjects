@@ -37,6 +37,12 @@
             border-radius: 25px;
         }
 
+        img {
+            height: 300px;
+            width: 300px;
+            border: solid 8px #ffffff;
+        }
+
         .form-control {
             margin-top: 9px;
             margin-left: 30px;
@@ -209,6 +215,24 @@
             }
         }
 
+        .featured-categories
+        {
+            margin: 50px 0;
+        }
+
+        .featured-categories img
+        {
+            width: 100%;
+            padding: 20px 0;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .featured-categories img:hover
+        {
+            transform: scale(1.1);
+        }
+
 
     </style>
 </head>
@@ -220,9 +244,11 @@
             <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
             <img class="logo"
                  src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg">
-            <input type="text" class="form-control">
+            <label>
+                <input type="text" class="form-control">
+            </label>
             <span class="input-group-text"><i class="fa fa-search"></i></span>
-        </div>
+            </div>
     </div>
     <div class="menu-bar">
         <ul>
@@ -299,7 +325,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img src="">
+                <h2> Full Circle Plant Food </h2>
+                <img src="https://static.wixstatic.com/media/a3750f_f84e6408b6724c709c5e8e31a2e55a79~mv2_d_1536_2048_s_2.jpg/v1/fill/w_480,h_640,al_c,q_85,usm_0.66_1.00_0.01/a3750f_f84e6408b6724c709c5e8e31a2e55a79~mv2_d_1536_2048_s_2.jpg">
+            </div>
+            <div class="col-md-4">
+                <h2> Putnam Hill Nursery </h2>
+                <img src="https://putnamhillnursery.com/wp-content/uploads/2015/02/Nursery1.jpg">
+            </div>
+            <div class="col-md-4">
+                <h2> Spring Thyme Nursery </h2>
+                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/IGEH06XlS3lErgh4vrE9cQ/180s.jpg">
+               </div>
+            <div class="col-md-4">
+                <h2> 5 Cow Farm Boards </h2>
+                <img src="https://static1.squarespace.com/static/5a6e457d12abd97a057772e6/t/5dc42036d013963f1c0c4a0c/1573134392337/logo+copy.png?format=1500w">
             </div>
         </div>
     </div>
