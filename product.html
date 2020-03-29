@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
+<style>
+    img {
+        height: 350px;
+        width: 350px;
+        border: 20px solid black;
+    }
+</style>
 <body>
+<!------Nav-Bar----->
 <div class="top-nav-bar">
     <div class="search-box">
         <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
         <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-        <img class="logo"
-             src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg">
+        <img class="logo" src="https://cylburn.org/wp-content/uploads/2019/02/Market-Day-logo3-1.jpg">
         <label>
             <input type="text" class="form-control">
         </label>
@@ -19,10 +26,98 @@
 </div>
 <div class="menu-bar">
     <ul>
-        <li><a href="#"><i class="fa fa-shopping-basket"></i></a>Cart</li>
-        <li><a href="#"> </a>Sign Up</li>
-        <li><a href="#"> </a>Log In</li>
+        <li><a href="#"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+        <li><a href="#"> Sign Up</a></li>
+        <li><a href="#"> Log In</a></li>
     </ul>
 </div>
+
+<!-------Single-Product-------->
+
+<section class="single-product">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://cylburn.org/wp-content/uploads/2019/02/Market-Day-logo3-1.jpg"
+                                     class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cf.ltkcdn.net/garden/images/std/187218-283x377-beech.jpg" class="d-block w-100">
+
+                                <img src="https://render.fineartamerica.com/images/rendered/default/canvas-print/10/6.5/mirror/break/images/artworkimages/medium/1/2-pink-weeping-cherry-tree-in-bloom-regina-geoghan-canvas-print.jpg"
+                                     class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cylburnarboretum.files.wordpress.com/2019/10/caa-logo-and-address-block_print-1.jpg?w=660" class="d-block w-100">
+                            </div>
+                        </div>
+
+
+
+        </div>
+    </div>
+
+
+</section>
+
+<!--------Thank-Yous--->
+
+<section class="website-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md 3 feature-box">
+                <p> Thank you from Cylburn Arboretum Friends Association </p>
+            </div>
+            <div class="col-md 3 feature-box">
+                <p> We appreciate your Support </p>
+            </div>
+            <div class="col-md 3 feature-box">
+                <p> We'd love to hear from you. Contact Us at info@cylburn.org </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--/*--------footer---------*/-->
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md 3 footer-text">
+                <h2> Useful Links </h2>
+                <p> Cylburn Arboretum Website </p>
+                <p> Vendor Websites </p>
+            </div>
+            <div class="col-md 3 footer-text">
+                <h2> Follow Us! </h2>
+                <p> Instagram </p>
+                <p> Twitter </p>
+            </div>
+            <div class="col-md 3 footer-text">
+                <h2> Safety Information </h2>
+                <p> COVID-19 Policy </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    function openmenu() {
+        document.getElementById("side-menu").style.display = "block";
+        document.getElementById("menu-btn").style.display = "none";
+        document.getElementById("close-btn").style.display = "block";
+    }
+
+    function closemenu() {
+        document.getElementById("side-menu").style.display = "none";
+        document.getElementById("menu-btn").style.display = "block";
+        document.getElementById("close-btn").style.display = "none";
+    }
+</script>
 </body>
 </html>
